@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char color;
+    cout << "Choose your color (G/B): ";
+    cin >> color;
+    if (color == 'G' || color == 'g') {
+        cout << "\nYou choose green color.";
+    }
+    else {
+        cout << "\nYou choose blue color.";
+    }
+    if(color != 'G' && color != 'g') {
+        cout << "\nYou have not chosen green color.";
+    }
+}
