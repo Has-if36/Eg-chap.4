@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char g;
+    
+    //input
+    cout << "Enter your grade: ";
+    cin >> g;
+    
+    //selection
+    if(g == 'a' || g == 'A'){
+        cout << "Excellent.";
+    } else if (g == 'b' || g == 'B') {
+        cout << "Very good.";
+    } else if(g == 'c' || g == 'C'){
+        cout << "Passed.";
+    } else if(g == 'd' || g == 'D') {
+        cout << "Not good. Study harder.";
+    } else {
+        cout << "Not a possible grade.";
+    }
+    
+}
