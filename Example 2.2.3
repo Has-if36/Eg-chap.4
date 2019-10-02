@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char course;
+    int year;
+    
+    //Input
+    cout << "Enter I if you're a Artificial Intelligence " << "student: ";
+    cin >> course;
+    
+    //selection
+    if(course == 'a' || course == 'A') {
+        //input
+        cout << "What year are you in? ";
+        cin >> year;
+        
+        //selection
+        if(year == 1){
+            cout << "\n\nHi! You're a Artificial Intelligence first year student.";
+        } else {
+            cout << "\n\nHi! You're Artificial Intelligence student.";
+        }
+    } else {
+        cout << "\n\nHi! You're not Artficial Intelligence student.";
+    }
+    return 0;
+}
