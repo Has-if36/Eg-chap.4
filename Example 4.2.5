@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char g;
+    
+    //input grade
+    cout << "Enter your midterm grade: ";
+    cin >> g;
+    
+    switch(g){
+        case 'A':
+        case 'a':
+            cout << "Excellent!\n";
+            break;
+        case 'B':
+        case 'b':
+            cout << "Very Good!\n";
+            break;
+        case 'C':
+        case 'c':
+            cout << "Passed.";
+            break;
+        case 'D':
+        case 'd':
+        case 'F':
+        case 'f':
+            cout << "Bad! Study harder!\n";
+            break;
+        default:
+            cout << "This is not in the grade scale...";
+    }
+}
