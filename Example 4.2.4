@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+int main()
+{
+  const double PAY_RATE = 8.0;
+  const int MIN_HOURS = 6;
+  double charges, hours;
+  
+  //inout hours
+  cout << "Enter how many hours: ";
+  cin >> hours;
+  
+  //determine hours to charge
+  hours = hours<MIN_HOURS? MIN_HOURS: hours;
+  
+  //calculate charges
+  charges = PAY_RATE*hours;
+  
+  //display charges
+  printf("The payment is RM%1.2f\n", charges);
+  cout << fixed << showpoint << setprecision(2) << "The payment is RM" << charges << endl;
+  return 0;
+}
